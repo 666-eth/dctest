@@ -1,3 +1,7 @@
+javascript:(function() {
+
+
+
 function performClicks() {
   var e = (s) => document.evaluate(s, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
   var c = (e) => { if (e) e.click(); };
@@ -18,3 +22,5 @@ function performClicks() {
 }
 
 performClicks();
+
+})();
